@@ -85,6 +85,7 @@ Git是目前世界上最先进的分布式版本控制系统
 		你需要把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可,一切顺利的话，可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥。
 
 	* 第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面，然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
+	
 	![添加Key](https://www.liaoxuefeng.com/files/attachments/001384908342205cc1234dfe1b541ff88b90b44b30360da000/0)
 
 #### 添加远程库
