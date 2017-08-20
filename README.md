@@ -63,6 +63,8 @@ Git是目前世界上最先进的分布式版本控制系统
 	> $ git reset --hard HEAD^
 	> HEAD is now at ea34578 add distributed
 
+* HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令 **git reset --hard commit_id**
+
 * **git reflog** 用来记录你的每一次命令，可找到id用于回到未来版本；
 
 * 撤销修改
@@ -90,7 +92,7 @@ Git是目前世界上最先进的分布式版本控制系统
 
 #### 添加远程库
 
-* 要关联一个远程库，使用命令 **git remote add origin git@server-name:path/repo-name.git** ；
+* 要关联一个远程库，使用命令 **git remote add origin git@server-name:path/repo-name.git** ；（git remote add origin git@github.com:ChauncyWu/repo-name.git）
 
 * 关联后，使用命令 **git push -u origin master** 第一次推送master分支的所有内容，第一次使用Git的clone或者push命令连接GitHub时，会得到一个警告，这是因为Git使用SSH连接，而SSH连接在第一次验证GitHub服务器的Key时，需要你确认GitHub的Key的指纹信息是否真的来自GitHub的服务器，输入 *yes* 回车即可。
 
